@@ -10,8 +10,6 @@ function ChangeMap({ center, zoom }) {
 }
 
 const Map = ({ countries, casesType, center, zoom }) => {
-  console.log('coutries are', countries);
-  console.log('center is', center);
   return (
     <div className="map">
       <MapContainer center={center} zoom={zoom}>

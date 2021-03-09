@@ -26,28 +26,27 @@ body {
 .app__left {
   flex: 0.9;
 }
+.app__right {
+  width: 312px;
+}
 .app__stats {
   display: flex;
   justify-content: space-between;
 }
-.app__right {
-  display: flex;
-  flex-direction: column;
-}
-.app__right .MuiCardContent-root {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.app__graph {
-  flex-grow: 1;
+
+canvas {
+  margin-bottom: 70px;
 }
 .app__graphTitle {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
 }
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
+  }
+  .app__right {
+    display: block;
+    width: 100%;
   }
 }

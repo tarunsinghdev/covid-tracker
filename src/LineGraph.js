@@ -63,7 +63,6 @@ const buildChartData = (data, casesType) => {
   return chartData;
 };
 const LineGraph = ({ casesType = 'cases', ...props }) => {
-  console.log('from linegraph', casesType);
   const [data, setData] = useState({});
   useEffect(() => {
     const fetchData = async () => {
