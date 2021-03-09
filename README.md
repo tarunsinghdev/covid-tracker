@@ -11,7 +11,7 @@
 ## ⭐️ Features
 
 - One tap tracking.
-- Detailed tracking via Map and graph.
+- Dynamic tracking with Map and graph.
 
 ## 💻 Tech Stack
 
