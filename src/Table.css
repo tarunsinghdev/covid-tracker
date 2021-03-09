@@ -4,7 +4,9 @@
   height: 400px;
   color: #6a5d5d;
 }
-
+table {
+  width: 100%;
+}
 .table tr {
   display: flex;
   justify-content: space-between;
