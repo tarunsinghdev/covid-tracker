@@ -29,13 +29,11 @@ const App = () => {
 
   const onCountryChange = async (e) => {
     const countryCode = e.target.value;
-    console.log('country code is ', countryCode);
     const url =
       countryCode === 'worldwide'
         ? 'https://disease.sh/v3/covid-19/all'
         : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
     const response = await axios.get(url);
-    console.log(response.data);
     setCountry(countryCode);
     setCountryInfo(response.data);
     if (response.data.countryInfo) {
