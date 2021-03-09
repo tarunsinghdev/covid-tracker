@@ -1,4 +1,3 @@
-import cuid from 'cuid';
 import React from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import './Map.css';

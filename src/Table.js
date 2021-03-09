@@ -1,4 +1,5 @@
 import cuid from 'cuid';
+import numeral from 'numeral';
 import React from 'react';
 import './Table.css';
 
@@ -11,7 +12,7 @@ const Table = ({ countriesData }) => {
             <tr key={cuid()}>
               <td>{country}</td>
               <td>
-                <strong>{cases}</strong>
+                <strong>{numeral(cases).format(',')}</strong>
               </td>
             </tr>
           ))}
